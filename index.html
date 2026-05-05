@@ -1,0 +1,141 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Verification Tag yahan laga hua hai -->
+    <meta name="google-site-verification" content="1QpGmu-Agho_oH1KaCe_A05ZYFOBM1XUojjmKa76gUY" />
+    <title>Sahil AI Fast Tools | Professional Version</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/browser-image-compression/2.0.2/browser-image-compression.min.js"></script>
+    <style>
+        body { background-color: #f0f2f5; font-family: sans-serif; }
+        .hero { background: linear-gradient(135deg, #6c63ff, #3f3d56); color: white; padding: 40px 20px; border-radius: 0 0 40px 40px; text-align: center; }
+        .card { border: none; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); margin-bottom: 25px; padding: 25px; }
+        .result-box { background: #e7f3ff; padding: 15px; border-radius: 10px; display: none; margin-top: 15px; text-align: center; font-weight: bold; color: #0d6efd; border-left: 5px solid #0d6efd; }
+        footer { background: #222; color: #bbb; padding: 40px 20px; margin-top: 50px; text-align: center; }
+        footer a { color: #6c63ff; text-decoration: none; margin: 0 10px; font-size: 0.9rem; font-weight: bold; }
+        .btn-whatsapp { background-color: #25D366; color: white; font-weight: bold; border-radius: 50px; padding: 12px 25px; text-decoration: none; display: inline-block; margin-top: 15px; }
+        .contact-info { color: #6c63ff; font-weight: bold; margin-top: 10px; display: block; }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1 class="display-6 fw-bold">🚀 Sahil AI Fast Tools</h1>
+    <p class="lead">Photo Compress karein aur Age calculate karein - Ek dum Free!</p>
+    <a href="https://api.whatsapp.com/send?text=Bhai ye tool mast hai! Photo ki size kam karo aur Age calculate karo: https://sahilaifasttool.netlify.app" class="btn-whatsapp" target="_blank">📲 Share on WhatsApp</a>
+</div>
+
+<div class="container mt-5">
+    <div class="row g-4">
+        <!-- Image Compressor Card -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <h3 class="mb-3">🖼️ Image Compressor</h3>
+                <p class="text-muted small">Sarkari forms ke liye photo ki size (KB) kam karein.</p>
+                <input type="file" id="imageInput" class="form-control mb-3" accept="image/*">
+                <input type="number" id="targetSize" class="form-control mb-3" placeholder="Size (e.g. 0.1 for 100KB)">
+                <button onclick="compressImage()" class="btn btn-primary w-100 fw-bold py-2">Compress & Download</button>
+                <div id="imgStatus" class="mt-3 text-center text-success fw-bold"></div>
+            </div>
+        </div>
+
+        <!-- Age Calculator Card -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <h3 class="mb-3">🎂 Easy Age Calculator</h3>
+                <p class="text-muted small">Apni Birth Date select karein aur umar jaanein.</p>
+                <div class="row g-2 mb-4">
+                    <div class="col-4">
+                        <label class="small fw-bold">Din</label>
+                        <select id="dobDay" class="form-select"></select>
+                    </div>
+                    <div class="col-4">
+                        <label class="small fw-bold">Mahina</label>
+                        <select id="dobMonth" class="form-select">
+                            <option value="0">Jan</option><option value="1">Feb</option><option value="2">Mar</option>
+                            <option value="3">Apr</option><option value="4">May</option><option value="5">Jun</option>
+                            <option value="6">Jul</option><option value="7">Aug</option><option value="8">Sep</option>
+                            <option value="9">Oct</option><option value="10">Nov</option><option value="11">Dec</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label class="small fw-bold">Saal (Year)</label>
+                        <select id="dobYear" class="form-select"></select>
+                    </div>
+                </div>
+                <button onclick="calculateAge()" class="btn btn-warning w-100 text-white fw-bold py-2">Umar Check Karein</button>
+                <div id="ageResultBox" class="result-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <div class="card">
+                <h4>📩 Feedback & Support</h4>
+                <p>Agar aapko koi problem aaye ya tool achha lage, toh humein mail karein:</p>
+                <a href="mailto:createbysahilai@gmail.com" class="contact-info">createbysahilai@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <h5>Sahil AI Fast Tools</h5>
+        <p>100% Safe & Secure | Google Verified Tool Site</p>
+        <div class="mt-3">
+            <a href="#">Privacy Policy</a> | 
+            <a href="mailto:createbysahilai@gmail.com">Contact Us</a> | 
+            <a href="#">Terms of Service</a>
+        </div>
+        <p class="small text-muted mt-3">&copy; 2026 Sahil AI Fast Tools. Created by Sahil AI.</p>
+    </div>
+</footer>
+
+<script>
+    function setupDropdowns() {
+        const daySelect = document.getElementById('dobDay');
+        const yearSelect = document.getElementById('dobYear');
+        for (let i = 1; i <= 31; i++) { daySelect.add(new Option(i, i)); }
+        const currentYear = new Date().getFullYear();
+        for (let i = currentYear; i >= 1950; i--) { yearSelect.add(new Option(i, i)); }
+    }
+    window.onload = setupDropdowns;
+
+    function calculateAge() {
+        const d = document.getElementById('dobDay').value;
+        const m = document.getElementById('dobMonth').value;
+        const y = document.getElementById('dobYear').value;
+        const dob = new Date(y, m, d);
+        const today = new Date();
+        let years = today.getFullYear() - dob.getFullYear();
+        let months = today.getMonth() - dob.getMonth();
+        let days = today.getDate() - dob.getDate();
+        if (days < 0) { months--; days += new Date(today.getFullYear(), today.getMonth(), 0).getDate(); }
+        if (months < 0) { years--; months += 12; }
+        const res = document.getElementById('ageResultBox');
+        res.style.display = "block";
+        res.innerHTML = `Aapki Umar: ${years} Saal, ${months} Mahine, ${days} Din`;
+    }
+
+    async function compressImage() {
+        const file = document.getElementById('imageInput').files[0];
+        const target = document.getElementById('targetSize').value;
+        if(!file || !target) return alert("Photo aur Size bhariye!");
+        document.getElementById('imgStatus').innerText = "⏳ Processing...";
+        try {
+            const comp = await imageCompression(file, { maxSizeMB: parseFloat(target), useWebWorker: true });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(comp);
+            link.download = "Sahil_Tool_" + file.name;
+            link.click();
+            document.getElementById('imgStatus').innerText = "✅ Download Ho Gaya!";
+        } catch (e) { alert("Error!"); }
+    }
+</script>
+</body>
+</html>
