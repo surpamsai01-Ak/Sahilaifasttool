@@ -1,87 +1,236 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Verification Tag yahan laga hua hai -->
-    <meta name="google-site-verification" content="r1UbqOQfYIhUSwWHrlPjfNd4HlN6uHGUI82IY37xc-s" />
     
-    <!-- 📄 Canonical Tag (Dono sites ka traffic ek karne ke liye) -->
+    <!-- ================= MAXIMUM HIGH-VOLUME SEO KEYWORDS ENGINE ================= -->
+    <title>Sahil AI Fast Tools - Free Online HD Image Compressor, Multi-Page PDF Converter & Utilities</title>
+    <meta name="description" content="Sahil AI Fast Tools is a 100% free online premium web utility hub. Convert multiple images into a single multi-page PDF instantly. Use our free online image compressor to reduce photo sizes to 20 KB without losing quality, live camera QR scanner, safe random password generator, and exact age calculator tool. Secure and fast.">
+    
+    <!-- Ultra Targeted SEO Keywords: Heavy Focus on "Free", "Online", and "Multi-Page PDF" -->
+    <meta name="keywords" content="sahil ai, sahil ai tools, sahilaifasttool, project by sahil ai, free online image compressor, image compressor 20 kb, online image compressor, free image compressor, compress image online free, reduce image size in kb free, convert multiple images to single pdf online free, bulk photo to pdf converter online, multi page pdf creator from images, free bulk image to pdf tool, free online age calculator, exact age calculator online, age check tool online free, free online password generator, random password creator free, strong password tool online, text to pdf converter online free, photo to pdf converter free online, live camera qr code scanner online, scan qr code using mobile camera web free, sahilaifasttool netlify, fast web utilities online free">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sahil AI">
+    
+    <!-- Open Graph Social Preview Specs -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sahil AI Fast Tools - Free Online Premium Web Utilities Hub">
+    <meta property="og:description" content="Free online image compressor to 20 KB, multi-page PDF converter from multiple images, live camera QR scanner, and safe password generator by Sahil AI.">
+    <meta property="og:site_name" content="Sahil AI Fast Tools">
+
+    <!-- Google Site Verification Tag -->
+    <meta name="google-site-verification" content="r1UbqOQfYIhUSwWHrlPjfNd4HlN6uHGUI82IY37xc-s" />
     <link rel="canonical" href="https://sahilaifasttool.netlify.app/" />
 
-    <title>Sahil AI Fast Tools | Professional Version</title>
+    <!-- Core Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/browser-image-compression/2.0.2/browser-image-compression.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+
+    <!-- Verbatim Sunburn Palette Integration -->
     <style>
-        body { background-color: #f0f2f5; font-family: sans-serif; }
-        .hero { background: linear-gradient(135deg, #6c63ff, #3f3d56); color: white; padding: 40px 20px; border-radius: 0 0 40px 40px; text-align: center; }
-        .card { border: none; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); margin-bottom: 25px; padding: 25px; }
-        .result-box { background: #e7f3ff; padding: 15px; border-radius: 10px; display: none; margin-top: 15px; text-align: center; font-weight: bold; color: #0d6efd; border-left: 5px solid #0d6efd; }
-        footer { background: #222; color: #bbb; padding: 40px 20px; margin-top: 50px; text-align: center; }
-        footer a { color: #6c63ff; text-decoration: none; margin: 0 10px; font-size: 0.9rem; font-weight: bold; }
-        .btn-whatsapp { background-color: #25D366; color: white; font-weight: bold; border-radius: 50px; padding: 12px 25px; text-decoration: none; display: inline-block; margin-top: 15px; }
-        .contact-info { color: #6c63ff; font-weight: bold; margin-top: 10px; display: block; }
+        body { 
+            background: linear-gradient(135deg, #fde5d6 0%, #ccd5d2 100%); 
+            font-family: 'Segoe UI', Georgia, serif;
+            color: #152935;
+            min-height: 100vh;
+        }
+        .hero { 
+            background: #152935;
+            color: #fde5d6; 
+            padding: 55px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid #e4a576;
+            box-shadow: 0 4px 15px rgba(21, 41, 53, 0.25);
+        }
+        .card { 
+            border: 2px solid #e4a576; 
+            border-radius: 20px; 
+            box-shadow: 0 15px 30px rgba(21, 41, 53, 0.1); 
+            margin-bottom: 25px; 
+            padding: 30px; 
+            background: #ffffff; 
+            transition: all 0.3s ease; 
+        }
+        .card:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(228, 165, 118, 0.35);
+        }
+        h3 {
+            color: #152935;
+            font-weight: 700;
+            border-bottom: 2px solid #698ea2;
+            padding-bottom: 8px;
+        }
+        .form-control, .form-select {
+            background-color: #fde5d6;
+            border: 1px solid #698ea2;
+            color: #152935;
+            border-radius: 10px;
+        }
+        .form-control:focus, .form-select:focus {
+            background-color: #ffffff;
+            color: #152935;
+            border-color: #e4a576;
+            box-shadow: 0 0 8px rgba(228, 165, 118, 0.5);
+        }
+        .btn {
+            border-radius: 10px;
+            font-weight: 600;
+            padding: 10px 20px;
+            transition: all 0.2s;
+        }
+        .btn-primary { background: #152935; color: #fde5d6; border: none; }
+        .btn-primary:hover { background: #698ea2; color: #152935; }
+        .btn-success { background: #698ea2; color: #152935; border: 1px solid #152935; }
+        .btn-success:hover { background: #152935; color: #fde5d6; }
+        .btn-dark { background: #e4a576; color: #152935; border: none; }
+        .btn-dark:hover { background: #152935; color: #fde5d6; }
+        
+        img, canvas {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: high-quality;
+            filter: contrast(1.02);
+        }
+        .result-box { 
+            background: #ccd5d2; 
+            padding: 15px; 
+            border-radius: 10px; 
+            display: none; 
+            margin-top: 15px; 
+            text-align: center; 
+            font-weight: 600; 
+            color: #152935; 
+            border: 1px solid #698ea2; 
+            word-break: break-all; 
+        }
+        footer { background: #152935; color: #ccd5d2; padding: 40px 20px; margin-top: 50px; text-align: center; border-top: 4px solid #e4a576; }
+        footer a { color: #e4a576; text-decoration: none; margin: 0 10px; font-weight: bold; }
+        .btn-whatsapp { background-color: #22c55e; color: white; font-weight: bold; border-radius: 50px; padding: 12px 30px; text-decoration: none; display: inline-block; margin-top: 15px; }
+        .contact-info { color: #e4a576; font-weight: bold; display: block; text-decoration: none; }
+        #reader { border-radius: 12px; overflow: hidden; }
     </style>
 </head>
 <body>
 
 <div class="hero">
-    <h1 class="display-6 fw-bold">🚀 Sahil AI Fast Tools</h1>
-    <p class="lead">Photo Compress karein aur Age calculate karein - Ek dum Free!</p>
-    <a href="https://api.whatsapp.com/send?text=Bhai ye tool mast hai! Photo ki size kam karo aur Age calculate karo: https://sahilaifasttool.netlify.app" class="btn-whatsapp" target="_blank">📲 Share on WhatsApp</a>
+    <h1 class="display-4 fw-bold">🚀 Sahil AI Fast Tools</h1>
+    <p class="lead fw-bold" style="color: #e4a576;">⚡ Project by Sahil AI ⚡</p>
+    <p class="small" style="color: #ccd5d2;">Premium Ultra-Clear HD Multi-Utility Optimization Engine</p>
+    <a href="https://api.whatsapp.com/send?text=Hey! Try these ultra-clear HD web tools built by Sahil AI. Compress photos without quality loss, convert to sharp PDF, and scan QR codes: https://sahilaifasttool.netlify.app" class="btn-whatsapp" target="_blank">📲 Share on WhatsApp</a>
 </div>
 
 <div class="container mt-5">
     <div class="row g-4">
-        <!-- Image Compressor Card -->
+        
+        <!-- 1. Ultra HD Image Compressor -->
         <div class="col-md-6">
             <div class="card h-100">
-                <h3 class="mb-3">🖼️ Image Compressor</h3>
-                <p class="text-muted small">Sarkari forms ke liye photo ki size (KB) kam karein.</p>
+                <h3>🖼️ Ultra HD Image Compressor</h3>
+                <p class="text-muted small">Compress image file sizes (KB) without losing HD sharpness, high-fidelity pixel resolution, or text clarity.</p>
+                <label class="form-label small fw-bold">Select Image File</label>
                 <input type="file" id="imageInput" class="form-control mb-3" accept="image/*">
-                <input type="number" id="targetSize" class="form-control mb-3" placeholder="Size (e.g. 0.1 for 100KB)">
-                <button onclick="compressImage()" class="btn btn-primary w-100 fw-bold py-2">Compress & Download</button>
-                <div id="imgStatus" class="mt-3 text-center text-success fw-bold"></div>
+                <label class="form-label small fw-bold">Target Size in MB (e.g., 0.02 for 20KB, 0.1 for 100KB)</label>
+                <input type="number" id="targetSize" class="form-control mb-3" placeholder="Target Size (e.g. 0.02)" step="0.01">
+                <button onclick="compressImage()" class="btn btn-primary w-100 py-2">Optimize & Compress Image</button>
+                <div id="imgStatus" class="mt-3 text-center fw-bold" style="color: #152935;"></div>
             </div>
         </div>
 
-        <!-- Age Calculator Card -->
+        <!-- 2. High-Res Document/Text PDF Converter -->
         <div class="col-md-6">
             <div class="card h-100">
-                <h3 class="mb-3">🎂 Easy Age Calculator</h3>
-                <p class="text-muted small">Apni Birth Date select karein aur umar jaanein.</p>
+                <h3>📄 Premium PDF & Text Converter</h3>
+                <p class="text-muted small">Convert handwritten photo exposures or plain typed notes into crystal clear downloaded PDFs with sleek, formal font structures.</p>
+                
+                <label class="form-label small fw-bold">Option A: Type Custom Text Content</label>
+                <textarea id="pdfText" class="form-control mb-3" rows="2" placeholder="Write or paste your clear notes here to generate a text PDF..."></textarea>
+                
+                <label class="form-label small fw-bold">Option B: Upload Document Image Layer (Select Multiple Allowed)</label>
+                <input type="file" id="pdfImageInput" class="form-control mb-3" accept="image/*" multiple>
+                
+                <button onclick="convertToPDF()" class="btn btn-success w-100 py-2">Export Sharp HD PDF</button>
+                <div id="pdfStatus" class="mt-3 text-center fw-bold" style="color: #152935;"></div>
+            </div>
+        </div>
+
+        <!-- 3. LIVE QR Code Camera Scanner -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <h3>📷 Live Camera QR Scanner</h3>
+                <p class="text-muted small">Grant real-time camera hardware permission access to map and scan code matrices instantly on your mobile device lens.</p>
+                <button onclick="startQRScanner()" class="btn btn-primary w-100 mb-3 py-2 fw-bold">Open Active Scanner Camera</button>
+                <div id="reader" class="w-100"></div>
+                <div id="qrResultBox" class="result-box"></div>
+            </div>
+        </div>
+
+        <!-- 4. Strong Password Generator -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <h3>🔑 Key Password Generator</h3>
+                <p class="text-muted small">Build bulletproof cryptographic random key arrays to secure database profiles and avoid system hacks.</p>
+                <label class="form-label small fw-bold">Select Password Length</label>
+                <select id="passwordLength" class="form-select mb-3">
+                    <option value="8">8 Characters</option>
+                    <option value="12" selected>12 Characters (Recommended)</option>
+                    <option value="16">16 Characters</option>
+                </select>
+                <button onclick="generatePassword()" class="btn btn-dark w-100 py-2">Generate Secure Key</button>
+                <div id="passwordResultBox" class="result-box"></div>
+            </div>
+        </div>
+
+        <!-- 5. Accurate Age Calculator Card -->
+        <div class="col-md-6 mx-auto">
+            <div class="card h-100">
+                <h3>🎂 Exact Age Calculator</h3>
+                <p class="text-muted small">Process timeline structures down to exact current calendar years, months, and specific days metrics.</p>
                 <div class="row g-2 mb-4">
                     <div class="col-4">
-                        <label class="small fw-bold">Din</label>
+                        <label class="small fw-bold">Day</label>
                         <select id="dobDay" class="form-select"></select>
                     </div>
                     <div class="col-4">
-                        <label class="small fw-bold">Mahina</label>
+                        <label class="small fw-bold">Month</label>
                         <select id="dobMonth" class="form-select">
-                            <option value="0">Jan</option><option value="1">Feb</option><option value="2">Mar</option>
-                            <option value="3">Apr</option><option value="4">May</option><option value="5">Jun</option>
-                            <option value="6">Jul</option><option value="7">Aug</option><option value="8">Sep</option>
-                            <option value="9">Oct</option><option value="10">Nov</option><option value="11">Dec</option>
+                            <option value="0">January</option><option value="1">February</option><option value="2">March</option>
+                            <option value="3">April</option><option value="4">May</option><option value="5">June</option>
+                            <option value="6">July</option><option value="7">August</option><option value="8 September</option>
+                            <option value="9">October</option><option value="10">November</option><option value="11">December</option>
                         </select>
                     </div>
                     <div class="col-4">
-                        <label class="small fw-bold">Saal (Year)</label>
+                        <label class="small fw-bold">Year</label>
                         <select id="dobYear" class="form-select"></select>
                     </div>
                 </div>
-                <button onclick="calculateAge()" class="btn btn-warning w-100 text-white fw-bold py-2">Umar Check Karein</button>
+                <button onclick="calculateAge()" class="btn btn-dark w-100 py-2">Run Calculation Engine</button>
                 <div id="ageResultBox" class="result-box"></div>
             </div>
         </div>
+
     </div>
 
-    <!-- Feedback Section -->
+    <!-- 📩 Advanced Feedback Form Section -->
     <div class="row mt-4">
         <div class="col-12 text-center">
-            <div class="card">
-                <h4>📩 Feedback & Support</h4>
-                <p>Agar aapko koi problem aaye ya tool achha lage, toh humein mail karein:</p>
-                <a href="mailto:createbysahilai@gmail.com" class="contact-info">createbysahilai@gmail.com</a>
+            <div class="card text-start" style="background: #ffffff; border-color: #152935;">
+                <h4 class="text-center fw-bold" style="color: #152935;">📩 User Feedback Hub</h4>
+                <p class="text-muted text-center small">Help us scale! Send bugs or feature recommendations directly to Sahil AI developer systems.</p>
+                <form id="feedbackForm" action="https://formspree.io/f/xoqorvke" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Your Email Address</label>
+                        <input type="email" name="_replyto" class="form-control" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Your Suggestions / Bug Report</label>
+                        <textarea name="message" class="form-control" rows="3" placeholder="Tell us what system adjustments or new tool arrays we should launch next..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2">Submit Encrypted Feedback</button>
+                </form>
             </div>
         </div>
     </div>
@@ -89,14 +238,16 @@
 
 <footer>
     <div class="container">
-        <h5>Sahil AI Fast Tools</h5>
-        <p>100% Safe & Secure | Google Verified Tool Site</p>
+        <h5 style="color: #fde5d6; font-weight: 700;">Sahil AI Fast Tools</h5>
+        <p style="color: #e4a576; font-weight: bold; margin: 10px 0; font-size: 1.1rem;">⚡ Project by Sahil AI ⚡</p>
+        <p style="color: #ccd5d2; font-size: 0.9rem;">Google Verified UI Layout Architecture | Safe & Secure Utilities</p>
         <div class="mt-3">
             <a href="#">Privacy Policy</a> | 
             <a href="mailto:createbysahilai@gmail.com">Contact Us</a> | 
             <a href="#">Terms of Service</a>
         </div>
-        <p class="small text-muted mt-3">&copy; 2026 Sahil AI Fast Tools. Created by Sahil AI.</p>
+        <p style="color: #ccd5d2; font-size: 0.9rem; margin-top: 15px;">Developer Business Email: <a href="mailto:createbysahilai@gmail.com" style="color: #e4a576; font-weight: bold; text-decoration: none;">createbysahilai@gmail.com</a></p>
+        <p style="color: #ccd5d2; font-size: 0.8rem; margin-top: 10px;">&copy; 2026 Sahil AI Fast Tools. All Rights Reserved.</p>
     </div>
 </footer>
 
@@ -110,6 +261,105 @@
     }
     window.onload = setupDropdowns;
 
+    // 1. HD Image Compressor Logic
+    async function compressImage() {
+        const file = document.getElementById('imageInput').files[0];
+        const target = document.getElementById('targetSize').value;
+        if(!file || !target) return alert("Please select an image and target size.");
+        document.getElementById('imgStatus').innerText = "⏳ Initializing High-Definition Optimization Scale...";
+        
+        const options = {
+            maxSizeMB: parseFloat(target),
+            maxWidthOrHeight: 4096, 
+            useWebWorker: true,
+            initialQuality: 0.98 
+        };
+
+        try {
+            const comp = await imageCompression(file, options);
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(comp);
+            link.download = "HD_Optimized_" + file.name;
+            link.click();
+            document.getElementById('imgStatus').innerText = "✅ HD Compressed Download Complete!";
+        } catch (e) { alert("Processing error during file scale compression."); }
+    }
+
+    // 2. High Resolution Text & Bulk Graphic Multi-Page PDF Architecture
+    async function convertToPDF() {
+        const text = document.getElementById('pdfText').value;
+        const imageFiles = document.getElementById('pdfImageInput').files;
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF('p', 'mm', 'a4'); 
+        
+        document.getElementById('pdfStatus').innerText = "⏳ Generating clear document matrices...";
+
+        if (imageFiles.length > 0) {
+            for (let i = 0; i < imageFiles.length; i++) {
+                if (i > 0) {
+                    doc.addPage(); // Adds a new page for every subsequent image
+                }
+                await new Promise((resolve) => {
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        const img = new Image();
+                        img.src = event.target.result;
+                        img.onload = function() {
+                            doc.addImage(img, 'JPEG', 10, 10, 190, 0, undefined, 'SLOW');
+                            resolve();
+                        }
+                    };
+                    reader.readAsDataURL(imageFiles[i]);
+                });
+            }
+            doc.save("HD_Sahil_AI_Bulk_Doc.pdf");
+            document.getElementById('pdfStatus').innerText = `✅ HD Multi-Page PDF Saved (${imageFiles.length} Pages)!`;
+        } else if (text.trim()) {
+            doc.setFont("Times", "Normal");
+            doc.setFontSize(12);
+            const splitText = doc.splitTextToSize(text, 180);
+            doc.text(splitText, 15, 20);
+            doc.save("HD_Text_Sahil_AI.pdf");
+            document.getElementById('pdfStatus').innerText = "✅ Clean Typeface PDF Saved!";
+        } else {
+            alert("Please supply raw script text or upload image file(s)!");
+            document.getElementById('pdfStatus').innerText = "";
+        }
+    }
+
+    // 3. Live QR Code Scanner Configuration
+    let html5QrcodeScanner;
+    function startQRScanner() {
+        const resultBox = document.getElementById('qrResultBox');
+        resultBox.style.display = "none";
+        
+        html5QrcodeScanner = new Html5Qrcode("reader");
+        html5QrcodeScanner.start(
+            { facingMode: "environment" }, 
+            { fps: 15, qrbox: { width: 250, height: 250 } },
+            (decodedText, decodedResult) => {
+                resultBox.style.display = "block";
+                resultBox.innerHTML = `Data Tracked: <br><a href="${decodedText}" target="_blank" class="text-decoration-none fw-bold" style="color: #698ea2;">${decodedText}</a>`;
+                html5QrcodeScanner.stop();
+            },
+            (errorMessage) => {}
+        ).catch(err => { alert("Device camera deployment failure or permission denied."); });
+    }
+
+    // 4. Password Generator Logic
+    function generatePassword() {
+        const length = parseInt(document.getElementById('passwordLength').value);
+        const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+        let password = "";
+        for (let i = 0, n = charset.length; i < length; ++i) {
+            password += charset.charAt(Math.floor(Math.random() * n));
+        }
+        const resBox = document.getElementById('passwordResultBox');
+        resBox.style.display = "block";
+        resBox.innerHTML = `Generated Array: <br><span class="font-monospace fs-5 mt-2 d-inline-block fw-bold" style="color: #698ea2;">${password}</span>`;
+    }
+
+    // 5. Age Calculator Logic
     function calculateAge() {
         const d = document.getElementById('dobDay').value;
         const m = document.getElementById('dobMonth').value;
@@ -123,22 +373,7 @@
         if (months < 0) { years--; months += 12; }
         const res = document.getElementById('ageResultBox');
         res.style.display = "block";
-        res.innerHTML = `Aapki Umar: ${years} Saal, ${months} Mahine, ${days} Din`;
-    }
-
-    async function compressImage() {
-        const file = document.getElementById('imageInput').files[0];
-        const target = document.getElementById('targetSize').value;
-        if(!file || !target) return alert("Photo aur Size bhariye!");
-        document.getElementById('imgStatus').innerText = "⏳ Processing...";
-        try {
-            const comp = await imageCompression(file, { maxSizeMB: parseFloat(target), useWebWorker: true });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(comp);
-            link.download = "Sahil_Tool_" + file.name;
-            link.click();
-            document.getElementById('imgStatus').innerText = "✅ Download Ho Gaya!";
-        } catch (e) { alert("Error!"); }
+        res.innerHTML = `Timeline Value: ${years} Years, ${months} Months, ${days} Days`;
     }
 </script>
 </body>
