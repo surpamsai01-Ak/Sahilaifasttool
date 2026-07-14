@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://sahilaifasttool.netlify.app/sitemap.xml
