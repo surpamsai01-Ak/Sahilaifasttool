@@ -1,16 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- Homepage -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.00</priority>
+    </url>
 
-<url>
-  <loc>https://surpamsai01-ak.github.io/Sahilaifasttool/</loc>
-  <lastmod>2026-05-07T06:04:26+00:00</lastmod>
-</url>
+    <!-- Tool 1: Image Compressor -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/compressor.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
 
+    <!-- Tool 2: PDF Converter -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/pdf-converter.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Tool 3: QR Scanner -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/qr-scanner.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Tool 4: Password Generator -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/password-generator.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Tool 5: Age Calculator -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/age-calculator.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Tool 6: Image Resizer -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/image-resizer.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Tool 7: Image Cropper -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/image-cropper.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Tool 8: Format Converter -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/format-converter.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Tool 9: PDF Merger -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/pdf-merger.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Tool 10: PDF Splitter -->
+    <url>
+        <loc>https://sahilaifasttool.netlify.app/pdf-splitter.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
 
 </urlset>
