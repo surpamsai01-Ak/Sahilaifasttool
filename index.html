@@ -7,27 +7,27 @@
     <!-- ================= MAXIMUM HIGH-VOLUME SEO KEYWORDS ENGINE ================= -->
     <title>Sahil AI Fast Tools - Free Online HD Image Compressor, Multi-Page PDF Converter & Utilities</title>
     <meta name="description" content="Sahil AI Fast Tools is a 100% free online premium web utility hub. Convert multiple images into a single multi-page PDF instantly. Use our free online image compressor to reduce photo sizes to 20 KB without losing quality, live camera QR scanner, safe random password generator, and exact age calculator tool. Secure and fast.">
-    
-    <!-- Ultra Targeted SEO Keywords: Heavy Focus on "Free", "Online", and "Multi-Page PDF" -->
-    <meta name="keywords" content="sahil ai, sahil ai tools, sahilaifasttool, project by sahil ai, free online image compressor, image compressor 20 kb, online image compressor, free image compressor, compress image online free, reduce image size in kb free, convert multiple images to single pdf online free, bulk photo to pdf converter online, multi page pdf creator from images, free bulk image to pdf tool, free online age calculator, exact age calculator online, age check tool online free, free online password generator, random password creator free, strong password tool online, text to pdf converter online free, photo to pdf converter free online, live camera qr code scanner online, scan qr code using mobile camera web free, sahilaifasttool netlify, fast web utilities online free">
+    <meta name="keywords" content="sahil ai, sahil ai tools, sahilaifasttool, free online image compressor, image compressor 20 kb, online image compressor, free image compressor, compress image online free, reduce image size in kb free, convert multiple images to single pdf online free, bulk photo to pdf converter online, multi page pdf creator from images, free bulk image to pdf tool, free online age calculator, exact age calculator online, age check tool online free, free online password generator, random password creator free, strong password tool online, text to pdf converter online free, photo to pdf converter free online, live camera qr code scanner online, scan qr code using mobile camera web free, sahilaifasttool netlify, fast web utilities online free, image resizer online, free image cropper, convert image to webp, png to jpg converter, merge pdf online free, split pdf client side">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sahil AI">
     
-    <!-- Open Graph Social Preview Specs -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sahil AI Fast Tools - Free Online Premium Web Utilities Hub">
     <meta property="og:description" content="Free online image compressor to 20 KB, multi-page PDF converter from multiple images, live camera QR scanner, and safe password generator by Sahil AI.">
     <meta property="og:site_name" content="Sahil AI Fast Tools">
 
-    <!-- Google Site Verification Tag -->
-    <meta name="google-site-verification" content="1QpGmu-Agho_oH1KaCe_A05ZYFOBM1XUojjmKa76gUY" />
+    
     <link rel="canonical" href="https://sahilaifasttool.netlify.app/" />
 
-    <!-- Core Libraries -->
+    <meta name="google-site-verification" contente 10pGnu-Agho oH1 Kače A05ZYFDBM1XUojjnka76gUY" />-- Core Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/browser-image-compression/2.0.2/browser-image-compression.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://unpkg.com/html5-qrcode"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
 
     <!-- Verbatim Sunburn Palette Integration -->
     <style>
@@ -45,12 +45,22 @@
             border-bottom: 5px solid #e4a576;
             box-shadow: 0 4px 15px rgba(21, 41, 53, 0.25);
         }
+        .badge-bar span {
+            background-color: #e4a576;
+            color: #152935;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 5px;
+            display: inline-block;
+        }
         .card { 
             border: 2px solid #e4a576; 
             border-radius: 20px; 
             box-shadow: 0 15px 30px rgba(21, 41, 53, 0.1); 
             margin-bottom: 25px; 
-            padding: 30px; 
+            padding: 25px; 
             background: #ffffff; 
             transition: all 0.3s ease; 
         }
@@ -58,7 +68,7 @@
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(228, 165, 118, 0.35);
         }
-        h3 {
+        h3, h4 {
             color: #152935;
             font-weight: 700;
             border-bottom: 2px solid #698ea2;
@@ -89,6 +99,52 @@
         .btn-dark { background: #e4a576; color: #152935; border: none; }
         .btn-dark:hover { background: #152935; color: #fde5d6; }
         
+        /* Grid Tool Cards Layout */
+        .tool-grid-card {
+            border: 2px solid #698ea2;
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+            transition: all 0.2s ease-in-out;
+        }
+        .tool-grid-card:hover {
+            border-color: #e4a576;
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(228, 165, 118, 0.2);
+        }
+        
+        /* Accordion Custom Styling */
+        .accordion-item {
+            background-color: #ffffff;
+            border: 2px solid #e4a576;
+            border-radius: 10px !important;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .accordion-button {
+            background-color: #fde5d6;
+            color: #152935;
+            font-weight: bold;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #e4a576;
+            color: #152935;
+            box-shadow: none;
+        }
+        .accordion-button::after {
+            filter: brightness(0.1);
+        }
+
+        .why-box {
+            background: #ffffff;
+            border: 2px solid #698ea2;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
         img, canvas {
             image-rendering: -webkit-optimize-contrast;
             image-rendering: high-quality;
@@ -106,117 +162,577 @@
             border: 1px solid #698ea2; 
             word-break: break-all; 
         }
+        .cropper-container-box {
+            max-height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px dashed #698ea2;
+            background: #ccd5d2;
+        }
+        
+        /* Minimalist Tool View Styling */
+        .tool-view-footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #698ea2;
+        }
+
         footer { background: #152935; color: #ccd5d2; padding: 40px 20px; margin-top: 50px; text-align: center; border-top: 4px solid #e4a576; }
         footer a { color: #e4a576; text-decoration: none; margin: 0 10px; font-weight: bold; }
         .btn-whatsapp { background-color: #22c55e; color: white; font-weight: bold; border-radius: 50px; padding: 12px 30px; text-decoration: none; display: inline-block; margin-top: 15px; }
-        .contact-info { color: #e4a576; font-weight: bold; display: block; text-decoration: none; }
-        #reader { border-radius: 12px; overflow: hidden; }
     </style>
 </head>
 <body>
 
-<div class="hero">
-    <h1 class="display-4 fw-bold">🚀 Sahil AI Fast Tools</h1>
-    <p class="lead fw-bold" style="color: #e4a576;">⚡ Project by Sahil AI ⚡</p>
-    <p class="small" style="color: #ccd5d2;">Premium Ultra-Clear HD Multi-Utility Optimization Engine</p>
-    <a href="https://api.whatsapp.com/send?text=Hey! Try these ultra-clear HD web tools built by Sahil AI. Compress photos without quality loss, convert to sharp PDF, and scan QR codes: https://sahilaifasttool.netlify.app" class="btn-whatsapp" target="_blank">📲 Share on WhatsApp</a>
-</div>
+<!-- ================= 1. HOME VIEW ================= -->
+<div id="homeView" class="app-page">
+    
+    <!-- 🚀 Hero Section -->
+    <div class="hero">
+        <h1 class="display-4 fw-bold">🚀 Sahil AI Fast Tools</h1>
+        <p class="lead fw-bold" style="color: #e4a576;">Fast • Free • Secure • No Signup</p>
+        <p class="small px-3 mx-auto" style="color: #ccd5d2; max-width: 600px;">
+            Compress images, create PDFs, scan QR codes, generate secure passwords and calculate age instantly.
+        </p>
+        <div class="mt-4">
+            <a href="#compressor" class="btn btn-primary m-1">Compress Image</a>
+            <a href="#pdf-converter" class="btn btn-success m-1">Create PDF</a>
+        </div>
+        <div class="badge-bar mt-4">
+            <span>✅ 100% Free</span>
+            <span>✅ No Login</span>
+            <span>✅ Works on Mobile</span>
+            <span>✅ Fast Processing</span>
+        </div>
+        <a href="https://api.whatsapp.com/send?text=Hey! Try these ultra-clear HD web tools built by Sahil AI. Compress photos without quality loss, convert to sharp PDF, and scan QR codes: https://sahilaifasttool.netlify.app" class="btn-whatsapp" target="_blank">📲 Share on WhatsApp</a>
+    </div>
 
-<div class="container mt-5">
-    <div class="row g-4">
-        
-        <!-- 1. Ultra HD Image Compressor -->
-        <div class="col-md-6">
-            <div class="card h-100">
-                <h3>🖼️ Ultra HD Image Compressor</h3>
-                <p class="text-muted small">Compress image file sizes (KB) without losing HD sharpness, high-fidelity pixel resolution, or text clarity.</p>
-                <label class="form-label small fw-bold">Select Image File</label>
-                <input type="file" id="imageInput" class="form-control mb-3" accept="image/*">
-                <label class="form-label small fw-bold">Target Size in MB (e.g., 0.02 for 20KB, 0.1 for 100KB)</label>
-                <input type="number" id="targetSize" class="form-control mb-3" placeholder="Target Size (e.g. 0.02)" step="0.01">
-                <button onclick="compressImage()" class="btn btn-primary w-100 py-2">Optimize & Compress Image</button>
-                <div id="imgStatus" class="mt-3 text-center fw-bold" style="color: #152935;"></div>
+    <div class="container mt-5">
+        <!-- 🔥 Popular Tools (Grid) -->
+        <h2 class="text-center fw-bold mb-4">🔥 Popular Tools</h2>
+        <div class="row g-3">
+            <!-- 1. Compressor -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">🖼️</div>
+                    <h6 class="fw-bold">Image Compressor</h6>
+                    <p class="text-muted small mb-3">Reduce image file size instantly.</p>
+                    <a href="#compressor" class="btn btn-primary btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 2. PDF Converter -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">📄</div>
+                    <h6 class="fw-bold">PDF Converter</h6>
+                    <p class="text-muted small mb-3">Turn images or text to PDF.</p>
+                    <a href="#pdf-converter" class="btn btn-success btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 3. QR Scanner -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">📷</div>
+                    <h6 class="fw-bold">QR Scanner</h6>
+                    <p class="text-muted small mb-3">Scan QR code using camera.</p>
+                    <a href="#qr-scanner" class="btn btn-primary btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 4. Password Generator -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">🔐</div>
+                    <h6 class="fw-bold">Password Gen</h6>
+                    <p class="text-muted small mb-3">Generate strong passwords.</p>
+                    <a href="#password-generator" class="btn btn-dark btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 5. Age Calculator -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">🎂</div>
+                    <h6 class="fw-bold">Age Calculator</h6>
+                    <p class="text-muted small mb-3">Calculate your exact age.</p>
+                    <a href="#age-calculator" class="btn btn-dark btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 6. Resizer -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">📐</div>
+                    <h6 class="fw-bold">Image Resizer</h6>
+                    <p class="text-muted small mb-3">Resize custom pixel heights.</p>
+                    <a href="#image-resizer" class="btn btn-primary btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 7. Cropper -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">✂️</div>
+                    <h6 class="fw-bold">Image Cropper</h6>
+                    <p class="text-muted small mb-3">Crop images interactively.</p>
+                    <a href="#image-cropper" class="btn btn-dark btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 8. Converter -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">🔄</div>
+                    <h6 class="fw-bold">Format Converter</h6>
+                    <p class="text-muted small mb-3">Convert WebP, PNG, or JPG.</p>
+                    <a href="#format-converter" class="btn btn-success btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 9. Merger -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">🗂️</div>
+                    <h6 class="fw-bold">PDF Merger</h6>
+                    <p class="text-muted small mb-3">Merge multiple PDF files.</p>
+                    <a href="#pdf-merger" class="btn btn-primary btn-sm w-100">Open Tool</a>
+                </div>
+            </div>
+            <!-- 10. Splitter -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="tool-grid-card">
+                    <div class="fs-2 mb-2">✂️</div>
+                    <h6 class="fw-bold">PDF Splitter</h6>
+                    <p class="text-muted small mb-3">Split or extract PDF pages.</p>
+                    <a href="#pdf-splitter" class="btn btn-dark btn-sm w-100">Open Tool</a>
+                </div>
             </div>
         </div>
 
-        <!-- 2. High-Res Document/Text PDF Converter -->
-        <div class="col-md-6">
-            <div class="card h-100">
-                <h3>📄 Premium PDF & Text Converter</h3>
-                <p class="text-muted small">Convert handwritten photo exposures or plain typed notes into crystal clear downloaded PDFs with sleek, formal font structures.</p>
-                
-                <label class="form-label small fw-bold">Option A: Type Custom Text Content</label>
-                <textarea id="pdfText" class="form-control mb-3" rows="2" placeholder="Write or paste your clear notes here to generate a text PDF..."></textarea>
-                
-                <label class="form-label small fw-bold">Option B: Upload Document Image Layer (Select Multiple Allowed)</label>
-                <input type="file" id="pdfImageInput" class="form-control mb-3" accept="image/*" multiple>
-                
-                <button onclick="convertToPDF()" class="btn btn-success w-100 py-2">Export Sharp HD PDF</button>
-                <div id="pdfStatus" class="mt-3 text-center fw-bold" style="color: #152935;"></div>
+        <!-- ⭐ Why Choose Sahil AI Fast Tools -->
+        <h2 class="text-center fw-bold mt-5 mb-4">⭐ Why Choose Sahil AI Fast Tools</h2>
+        <div class="row g-3">
+            <div class="col-6 col-md-3">
+                <div class="why-box">
+                    <div class="fs-3">⚡</div>
+                    <h6 class="fw-bold mt-2">Super Fast</h6>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="why-box">
+                    <div class="fs-3">🔒</div>
+                    <h6 class="fw-bold mt-2">Privacy First</h6>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="why-box">
+                    <div class="fs-3">📱</div>
+                    <h6 class="fw-bold mt-2">Mobile Friendly</h6>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="why-box">
+                    <div class="fs-3">💯</div>
+                    <h6 class="fw-bold mt-2">Free Forever</h6>
+                </div>
             </div>
         </div>
+        <p class="text-center text-muted small mt-3 px-3">
+            Enjoy premium browser-based processing speed with absolute data safety. We never upload files to our servers.
+        </p>
 
-        <!-- 3. LIVE QR Code Camera Scanner -->
-        <div class="col-md-6">
-            <div class="card h-100">
-                <h3>📷 Live Camera QR Scanner</h3>
-                <p class="text-muted small">Grant real-time camera hardware permission access to map and scan code matrices instantly on your mobile device lens.</p>
-                <button onclick="startQRScanner()" class="btn btn-primary w-100 mb-3 py-2 fw-bold">Open Active Scanner Camera</button>
-                <div id="reader" class="w-100"></div>
-                <div id="qrResultBox" class="result-box"></div>
-            </div>
-        </div>
-
-        <!-- 4. Strong Password Generator -->
-        <div class="col-md-6">
-            <div class="card h-100">
-                <h3>🔑 Key Password Generator</h3>
-                <p class="text-muted small">Build bulletproof cryptographic random key arrays to secure database profiles and avoid system hacks.</p>
-                <label class="form-label small fw-bold">Select Password Length</label>
-                <select id="passwordLength" class="form-select mb-3">
-                    <option value="8">8 Characters</option>
-                    <option value="12" selected>12 Characters (Recommended)</option>
-                    <option value="16">16 Characters</option>
-                </select>
-                <button onclick="generatePassword()" class="btn btn-dark w-100 py-2">Generate Secure Key</button>
-                <div id="passwordResultBox" class="result-box"></div>
-            </div>
-        </div>
-
-        <!-- 5. Accurate Age Calculator Card -->
-        <div class="col-md-6 mx-auto">
-            <div class="card h-100">
-                <h3>🎂 Exact Age Calculator</h3>
-                <p class="text-muted small">Process timeline structures down to exact current calendar years, months, and specific days metrics.</p>
-                <div class="row g-2 mb-4">
-                    <div class="col-4">
-                        <label class="small fw-bold">Day</label>
-                        <select id="dobDay" class="form-select"></select>
-                    </div>
-                    <div class="col-4">
-                        <label class="small fw-bold">Month</label>
-                        <select id="dobMonth" class="form-select">
-                            <option value="0">January</option><option value="1">February</option><option value="2">March</option>
-                            <option value="3">April</option><option value="4">May</option><option value="5">June</option>
-                            <option value="6">July</option><option value="7">August</option><option value="8 September</option>
-                            <option value="9">October</option><option value="10">November</option><option value="11">December</option>
-                        </select>
-                    </div>
-                    <div class="col-4">
-                        <label class="small fw-bold">Year</label>
-                        <select id="dobYear" class="form-select"></select>
+        <!-- ❓ FAQ (Accordion style, default band) -->
+        <h2 class="text-center fw-bold mt-5 mb-4">❓ FAQ</h2>
+        <div class="accordion mx-auto" id="faqAccordion" style="max-width: 700px;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Is Sahil AI Fast Tools completely free?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Yes, 100% free with no hidden charges or subscriptions.
                     </div>
                 </div>
-                <button onclick="calculateAge()" class="btn btn-dark w-100 py-2">Run Calculation Engine</button>
-                <div id="ageResultBox" class="result-box"></div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Do I need to sign up or register?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        No signup or account creation is needed. All tools work instantly.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        Are my files and data secure?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Absolutely. All processing runs locally inside your browser canvas; your documents never touch any server.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        Will these tools work on my mobile phone?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Yes, our layout mechanics are perfectly optimized for all smartphone screen layers.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        Is there a daily limit on file conversions?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        There are absolutely no limits! Use them as many times as you like.
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
+</div>
 
-    <!-- 📩 Advanced Feedback Form Section -->
-    <div class="row mt-4">
-        <div class="col-12 text-center">
+
+<!-- ================= 2. ACTIVE TOOL VIEWS ================= -->
+<!-- FUTURE SEO ADVICE: To make separate pages in future, just copy each <section> inside its own separate HTML file! -->
+
+<div class="container mt-4 mb-5" id="toolViewContainer">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            
+            <a href="#home" class="btn btn-dark btn-sm mb-4">← Back to Homepage</a>
+
+            <!-- Tool 1: Compressor Section -->
+            <section id="compressor" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>🖼️ Ultra HD Image Compressor</h3>
+                    <p class="text-muted small">Compress image file sizes (KB) without losing HD sharpness, high-fidelity pixel resolution, or text clarity.</p>
+                    <label class="form-label small fw-bold">Select Image File</label>
+                    <input type="file" id="imageInput" class="form-control mb-3" accept="image/*">
+                    <label class="form-label small fw-bold">Target Size in MB (e.g., 0.02 for 20KB, 0.1 for 100KB)</label>
+                    <input type="number" id="targetSize" class="form-control mb-3" placeholder="Target Size (e.g. 0.02)" step="0.01">
+                    <button onclick="compressImage()" class="btn btn-primary w-100 py-2">Optimize & Compress Image</button>
+                    <div id="imgStatus" class="mt-3 text-center fw-bold" style="color: #152935;"></div>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">This high-definition image compressor reduces the file size of your photos in seconds. It uses smart client-side processing to shrink JPG, PNG, and WebP images down to 20KB, 50KB, or 100KB while preserving high-fidelity visual sharpness.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Upload image</li>
+                            <li>Select target size</li>
+                            <li>Download</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 2: PDF Converter Section -->
+            <section id="pdf-converter" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>📄 Premium PDF & Text Converter</h3>
+                    <p class="text-muted small">Convert handwritten photo exposures or plain typed notes into crystal clear downloaded PDFs.</p>
+                    <label class="form-label small fw-bold">Option A: Type Custom Text Content</label>
+                    <textarea id="pdfText" class="form-control mb-3" rows="2" placeholder="Write or paste your clear notes here..."></textarea>
+                    <label class="form-label small fw-bold">Option B: Upload Document Image Layer (Select Multiple Allowed)</label>
+                    <input type="file" id="pdfImageInput" class="form-control mb-3" accept="image/*" multiple>
+                    <button onclick="convertToPDF()" class="btn btn-success w-100 py-2">Export Sharp PDF</button>
+                    <div id="pdfStatus" class="mt-3 text-center fw-bold" style="color: #152935;"></div>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Convert your plain text notes or scanned image layers into beautifully structured PDF documents. Perfect for compiling multiple image layers or typed notes into a single clear, formal file instantly.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Upload files or enter text</li>
+                            <li>Click export</li>
+                            <li>Download</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 3: QR Scanner Section -->
+            <section id="qr-scanner" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>📷 Live Camera QR Scanner</h3>
+                    <p class="text-muted small">Grant camera permission access to map and scan code matrices instantly on your phone.</p>
+                    <button onclick="startQRScanner()" class="btn btn-primary w-100 mb-3 py-2 fw-bold">Open Active Scanner Camera</button>
+                    <div id="reader" class="w-100"></div>
+                    <div id="qrResultBox" class="result-box"></div>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Access your active mobile lens instantly to scan and decode QR matrices on the fly. Simply point your camera to fetch website URLs or text assets securely without recording any private trace data.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Open camera permission</li>
+                            <li>Point scanner at QR code</li>
+                            <li>View result data</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 4: Password Generator Section -->
+            <section id="password-generator" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>🔑 Key Password Generator</h3>
+                    <p class="text-muted small">Build secure random cryptographic key arrays to avoid hacks.</p>
+                    <label class="form-label small fw-bold">Select Password Length</label>
+                    <select id="passwordLength" class="form-select mb-3">
+                        <option value="8">8 Characters</option>
+                        <option value="12" selected>12 Characters (Recommended)</option>
+                        <option value="16">16 Characters</option>
+                    </select>
+                    <button onclick="generatePassword()" class="btn btn-dark w-100 py-2">Generate Secure Key</button>
+                    <div id="passwordResultBox" class="result-box"></div>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Generate strong, cryptographically secure random password strings instantly. This tool builds high-entropy keys with numbers, symbols, and letters to shield your database credentials and accounts from hacking attempts.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Select length</li>
+                            <li>Click generate</li>
+                            <li>Copy and save</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 5: Age Calculator Section -->
+            <section id="age-calculator" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>🎂 Exact Age Calculator</h3>
+                    <p class="text-muted small">Process timeline structures down to exact current calendar values metrics.</p>
+                    <div class="row g-2 mb-4">
+                        <div class="col-4">
+                            <label class="small fw-bold">Day</label>
+                            <select id="dobDay" class="form-select"></select>
+                        </div>
+                        <div class="col-4">
+                            <label class="small fw-bold">Month</label>
+                            <select id="dobMonth" class="form-select">
+                                <option value="0">January</option><option value="1">February</option><option value="2">March</option>
+                                <option value="3">April</option><option value="4">May</option><option value="5">June</option>
+                                <option value="6">July</option><option value="7">August</option><option value="8">September</option>
+                                <option value="9">October</option><option value="10">November</option><option value="11">December</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label class="small fw-bold">Year</label>
+                            <select id="dobYear" class="form-select"></select>
+                        </div>
+                    </div>
+                    <button onclick="calculateAge()" class="btn btn-dark w-100 py-2">Run Calculation Engine</button>
+                    <div id="ageResultBox" class="result-box"></div>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Calculate your exact chronological age across complex calendar timelines instantly. Get a detailed breakdown of your precise lifetime values calculated down to the exact years, months, and days metrics.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Select date of birth</li>
+                            <li>Click calculate</li>
+                            <li>View exact values</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 6: Image Resizer Section -->
+            <section id="image-resizer" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>📐 Smart Image Resizer</h3>
+                    <p class="text-muted small">Resize your images to custom pixel dimensions instantly without damaging the aspect ratio.</p>
+                    <label class="form-label small fw-bold">Select Image</label>
+                    <input type="file" id="resizeInput" class="form-control mb-3" accept="image/*">
+                    <div class="row g-2 mb-3">
+                        <div class="col-6">
+                            <label class="small fw-bold">Width (px)</label>
+                            <input type="number" id="resizeWidth" class="form-control" placeholder="e.g. 1920">
+                        </div>
+                        <div class="col-6">
+                            <label class="small fw-bold">Height (px)</label>
+                            <input type="number" id="resizeHeight" class="form-control" placeholder="e.g. 1080">
+                        </div>
+                    </div>
+                    <button onclick="resizeImage()" class="btn btn-primary w-100 py-2">Apply New Dimensions</button>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Adjust custom pixel dimensions for your pictures instantly without losing sharpness or breaking aspect ratios. Change layouts on the fly to fit social media platform requirements while maintaining aspect integrity.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Upload image</li>
+                            <li>Enter dimensions</li>
+                            <li>Download</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 7: Image Cropper Section -->
+            <section id="image-cropper" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>✂️ Precision Image Cropper</h3>
+                    <p class="text-muted small">Upload an image and drag the crop box to trim perfect custom borders seamlessly.</p>
+                    <label class="form-label small fw-bold">Upload Image to Crop</label>
+                    <input type="file" id="cropInput" class="form-control mb-3" accept="image/*" onchange="initCropper(event)">
+                    <div class="cropper-container-box mb-3 text-center">
+                        <img id="cropPreview" src="" style="max-width: 100%; display: none;">
+                    </div>
+                    <button onclick="executeCrop()" class="btn btn-dark w-100 py-2">Crop & Download Image</button>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Cut out unwanted borders and trim precise areas from your graphics with an interactive, visual cropping frame. Frame your images flawlessly for profiles, headers, or banners with absolute local accuracy.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Upload image asset</li>
+                            <li>Adjust frame grid</li>
+                            <li>Crop and Download</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 8: Format Converter Section -->
+            <section id="format-converter" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>🔄 Pro Image Format Converter</h3>
+                    <p class="text-muted small">Convert static graphic files instantly into optimized formats like WebP, PNG, or JPG.</p>
+                    <label class="form-label small fw-bold">Select Original Image</label>
+                    <input type="file" id="convertInput" class="form-control mb-3" accept="image/*">
+                    <label class="form-label small fw-bold">Target Output Format</label>
+                    <select id="convertFormat" class="form-select mb-3">
+                        <option value="image/webp">Convert to WebP (Recommended)</option>
+                        <option value="image/png">Convert to PNG (Lossless)</option>
+                        <option value="image/jpeg">Convert to JPG (Standard)</option>
+                    </select>
+                    <button onclick="convertImageFormat()" class="btn btn-success w-100 py-2">Convert & Export</button>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Convert regular static graphics into modern next-gen extensions like WebP, PNG, or JPG instantly. Improve webpage loading speed and optimize file layout formats dynamically right inside your browser canvas.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Upload image asset</li>
+                            <li>Select targeted extension</li>
+                            <li>Download</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 9: PDF Merger Section -->
+            <section id="pdf-merger" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>🗂️ Fast PDF Merger</h3>
+                    <p class="text-muted small">Combine multiple standalone PDF documents into a single multi-page unified master file asset.</p>
+                    <label class="form-label small fw-bold">Select Multiple PDF Files</label>
+                    <input type="file" id="pdfMergeInput" class="form-control mb-3" accept="application/pdf" multiple>
+                    <button onclick="mergePDFs()" class="btn btn-primary w-100 py-2">Merge All Documents</button>
+                    <div id="pdfMergeStatus" class="mt-3 text-center fw-bold" style="color: #152935;"></div>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Assemble separate PDF documents into a single, beautifully organized multi-page unified document file. Combine reports, assignments, or invoices in the exact sequence you need without any external server risk.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Upload multiple PDFs</li>
+                            <li>Click merge button</li>
+                            <li>Download</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool 10: PDF Splitter Section -->
+            <section id="pdf-splitter" class="app-page" style="display: none;">
+                <div class="card">
+                    <h3>✂️ Clean PDF Splitter</h3>
+                    <p class="text-muted small">Extract isolated specific page numbers or clean custom page ranges into a separate new document.</p>
+                    <label class="form-label small fw-bold">Upload Master PDF</label>
+                    <input type="file" id="pdfSplitInput" class="form-control mb-3" accept="application/pdf">
+                    <label class="form-label small fw-bold">Specify Range (e.g., '2' or '1-3')</label>
+                    <input type="text" id="pdfSplitRange" class="form-control mb-3" placeholder="Enter target page layout structure...">
+                    <button onclick="splitPDF()" class="btn btn-dark w-100 py-2">Extract Specified Pages</button>
+                    <div id="pdfSplitStatus" class="mt-3 text-center fw-bold" style="color: #152935;"></div>
+
+                    <div class="tool-view-footer">
+                        <h6 class="fw-bold">What is this tool?</h6>
+                        <p class="text-muted small">Extract specific isolated pages or ranges from large PDF files. Split heavy documents into clean, lightweight individual page assets seamlessly using local browser engine loops.</p>
+                        
+                        <h6 class="fw-bold mt-3">How to use?</h6>
+                        <ol class="text-muted small">
+                            <li>Upload PDF file</li>
+                            <li>Enter target pages</li>
+                            <li>Download</li>
+                        </ol>
+
+                        <h6 class="fw-bold mt-3">Benefits</h6>
+                        <p class="small mb-0">✔ Fast &nbsp;&nbsp; ✔ Free &nbsp;&nbsp; ✔ Secure</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+<!-- 📩 Advanced Feedback Form Section -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 mx-auto text-center">
             <div class="card text-start" style="background: #ffffff; border-color: #152935;">
                 <h4 class="text-center fw-bold" style="color: #152935;">📩 User Feedback Hub</h4>
                 <p class="text-muted text-center small">Help us scale! Send bugs or feature recommendations directly to Sahil AI developer systems.</p>
@@ -236,22 +752,54 @@
     </div>
 </div>
 
+<!-- 📢 Footer Section -->
 <footer>
     <div class="container">
         <h5 style="color: #fde5d6; font-weight: 700;">Sahil AI Fast Tools</h5>
         <p style="color: #e4a576; font-weight: bold; margin: 10px 0; font-size: 1.1rem;">⚡ Project by Sahil AI ⚡</p>
         <p style="color: #ccd5d2; font-size: 0.9rem;">Google Verified UI Layout Architecture | Safe & Secure Utilities</p>
         <div class="mt-3">
-            <a href="#">Privacy Policy</a> | 
-            <a href="mailto:createbysahilai@gmail.com">Contact Us</a> | 
-            <a href="#">Terms of Service</a>
+            <a href="#">About</a> | 
+            <a href="#">Privacy</a> | 
+            <a href="#">Terms</a> | 
+            <a href="mailto:createbysahilai@gmail.com">Contact</a> | 
+            <a href="#">DMCA</a> | 
+            <a href="#">Disclaimer</a>
         </div>
         <p style="color: #ccd5d2; font-size: 0.9rem; margin-top: 15px;">Developer Business Email: <a href="mailto:createbysahilai@gmail.com" style="color: #e4a576; font-weight: bold; text-decoration: none;">createbysahilai@gmail.com</a></p>
         <p style="color: #ccd5d2; font-size: 0.8rem; margin-top: 10px;">&copy; 2026 Sahil AI Fast Tools. All Rights Reserved.</p>
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
+    // JS Router to toggle homepage & active tools dynamically
+    function router() {
+        const hash = window.location.hash || '#home';
+        const toolContainer = document.getElementById('toolViewContainer');
+        
+        document.querySelectorAll('.app-page').forEach(page => page.style.display = 'none');
+        
+        if (hash === '#home' || hash === '') {
+            document.getElementById('homeView').style.display = 'block';
+            toolContainer.style.display = 'none';
+        } else {
+            document.getElementById('homeView').style.display = 'none';
+            toolContainer.style.display = 'block';
+            const activePage = document.querySelector(hash);
+            if (activePage) {
+                activePage.style.display = 'block';
+                window.scrollTo(0, 0);
+            } else {
+                document.getElementById('homeView').style.display = 'block';
+                toolContainer.style.display = 'none';
+            }
+        }
+    }
+    window.addEventListener('hashchange', router);
+    window.addEventListener('load', router);
+
     function setupDropdowns() {
         const daySelect = document.getElementById('dobDay');
         const yearSelect = document.getElementById('dobYear');
@@ -259,7 +807,7 @@
         const currentYear = new Date().getFullYear();
         for (let i = currentYear; i >= 1950; i--) { yearSelect.add(new Option(i, i)); }
     }
-    window.onload = setupDropdowns;
+    window.addEventListener('DOMContentLoaded', setupDropdowns);
 
     // 1. HD Image Compressor Logic
     async function compressImage() {
@@ -296,9 +844,7 @@
 
         if (imageFiles.length > 0) {
             for (let i = 0; i < imageFiles.length; i++) {
-                if (i > 0) {
-                    doc.addPage(); // Adds a new page for every subsequent image
-                }
+                if (i > 0) { doc.addPage(); }
                 await new Promise((resolve) => {
                     const reader = new FileReader();
                     reader.onload = function(event) {
@@ -374,6 +920,165 @@
         const res = document.getElementById('ageResultBox');
         res.style.display = "block";
         res.innerHTML = `Timeline Value: ${years} Years, ${months} Months, ${days} Days`;
+    }
+
+    // 6. Image Resizer Engine
+    function resizeImage() {
+        const file = document.getElementById('resizeInput').files[0];
+        const w = parseInt(document.getElementById('resizeWidth').value);
+        const h = parseInt(document.getElementById('resizeHeight').value);
+        if (!file || !w || !h) return alert("Please select an image and enter targeted width & height assets.");
+        
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            const img = new Image();
+            img.src = event.target.result;
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = w;
+                canvas.height = h;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, w, h);
+                
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL(file.type);
+                link.download = "Resized_Sahil_AI_" + file.name;
+                link.click();
+            }
+        };
+        reader.readAsDataURL(file);
+    }
+
+    // 7. Precision Image Cropper Engine
+    let cropperInstance;
+    function initCropper(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const img = document.getElementById('cropPreview');
+            img.src = e.target.result;
+            img.style.display = 'block';
+            if (cropperInstance) cropperInstance.destroy();
+            cropperInstance = new Cropper(img, {
+                aspectRatio: NaN, 
+                viewMode: 1,
+                background: false
+            });
+        };
+        reader.readAsDataURL(file);
+    }
+
+    function executeCrop() {
+        if (!cropperInstance) return alert("Please upload an image asset to activate the cropping frame matrix.");
+        const file = document.getElementById('cropInput').files[0];
+        const canvas = cropperInstance.getCroppedCanvas();
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL(file.type);
+        link.download = "Cropped_Sahil_AI_" + file.name;
+        link.click();
+    }
+
+    // 8. Format Converter Engine
+    function convertImageFormat() {
+        const file = document.getElementById('convertInput').files[0];
+        const targetFormat = document.getElementById('convertFormat').value;
+        if (!file) return alert("Please select an image file to convert layout architectures.");
+        
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            const img = new Image();
+            img.src = event.target.result;
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0);
+                
+                const ext = targetFormat.split('/')[1];
+                const baseName = file.name.substring(0, file.name.lastIndexOf('.'));
+                
+                canvas.toBlob(function(blob) {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = `${baseName}_Converted.${ext}`;
+                    link.click();
+                }, targetFormat, 0.96);
+            }
+        };
+        reader.readAsDataURL(file);
+    }
+
+    // 9. Fast PDF Merger Architecture
+    async function mergePDFs() {
+        const files = document.getElementById('pdfMergeInput').files;
+        if (files.length < 2) return alert("Please select a minimum of 2 PDF structures to merge.");
+        document.getElementById('pdfMergeStatus').innerText = "⏳ Merging documentation layers...";
+        try {
+            const { PDFDocument } = PDFLib;
+            const mergedPdf = await PDFDocument.create();
+            for (let file of files) {
+                const arrayBuffer = await file.arrayBuffer();
+                const pdf = await PDFDocument.load(arrayBuffer);
+                const copiedPages = await mergedPdf.copyPages(pdf, pdf.getPageIndices());
+                copiedPages.forEach((page) => mergedPdf.addPage(page));
+            }
+            const pdfBytes = await mergedPdf.save();
+            const blob = new Blob([pdfBytes], { type: "application/pdf" });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = "Merged_Sahil_AI_Doc.pdf";
+            link.click();
+            document.getElementById('pdfMergeStatus').innerText = "✅ PDF Matrix Merged Successfully!";
+        } catch (e) {
+            alert("Error running compilation workflow: " + e.message);
+            document.getElementById('pdfMergeStatus').innerText = "";
+        }
+    }
+
+    // 10. Clean PDF Splitter Architecture
+    async function splitPDF() {
+        const file = document.getElementById('pdfSplitInput').files[0];
+        const rangeStr = document.getElementById('pdfSplitRange').value.trim();
+        if (!file || !rangeStr) return alert("Please specify input file layers and targeted split numbers.");
+        document.getElementById('pdfSplitStatus').innerText = "⏳ Partitioning document indices...";
+        try {
+            const { PDFDocument } = PDFLib;
+            const arrayBuffer = await file.arrayBuffer();
+            const srcPdf = await PDFDocument.load(arrayBuffer);
+            const totalPages = srcPdf.getPageCount();
+            
+            let pagesToExtract = [];
+            if (rangeStr.includes('-')) {
+                const parts = rangeStr.split('-');
+                const start = parseInt(parts[0]) - 1;
+                const end = parseInt(parts[1]) - 1;
+                for (let i = start; i <= end; i++) {
+                    if (i >= 0 && i < totalPages) pagesToExtract.push(i);
+                }
+            } else {
+                const pageNum = parseInt(rangeStr) - 1;
+                if (pageNum >= 0 && pageNum < totalPages) pagesToExtract.push(pageNum);
+            }
+            
+            if (pagesToExtract.length === 0) throw new Error("Invalid page boundaries target supplied.");
+            
+            const newPdf = await PDFDocument.create();
+            const copiedPages = await newPdf.copyPages(srcPdf, pagesToExtract);
+            copiedPages.forEach((page) => newPdf.addPage(page));
+            
+            const pdfBytes = await newPdf.save();
+            const blob = new Blob([pdfBytes], { type: "application/pdf" });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `Split_Sahil_AI_Pages_${rangeStr}.pdf`;
+            link.click();
+            document.getElementById('pdfSplitStatus').innerText = "✅ Isolated Document Matrix Extracted!";
+        } catch (e) {
+            alert("Error cutting document layout: " + e.message);
+            document.getElementById('pdfSplitStatus').innerText = "";
+        }
     }
 </script>
 </body>
